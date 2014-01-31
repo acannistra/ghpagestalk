@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GitHub Pages -- CSX Lighting Web </title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>GitHub Pages</h1>
+					<h2>Static, Fast, and Free.</h2>
+
+					By <a href="http://twitter.com/tonycannistra">@tonycannistra</a>
+				</section>
+				<section>
+					<h2>What's GitHub Pages?</h2>	
+					<ul>	
+						<li class="fragment appear">Free static hosting.</li>
+						<li class="fragment appear">Quick and easy if you know Git.</li>
+						<li class="fragment appear">Static, but Powerful.</li>
+
+					</ul>
+					
+				</section>
+				<section>
+					<h2>What can I use it for?</h2>
+					<ul>
+						<li class="fragment appear">Your <a target="_blank" href="http://www.anthonycannistra.com">personal website...</a></li>
+						<li class="fragment appear">A <a href="http://jekyllrb.com/docs/home/" target="_blank">documentation page...</a></li>
+						<li class="fragment appear"><a target="_blank" href="http://twitter.github.io/interactive/sotu2014/#p1">awesome.</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Two Types.</h2>
+					<ul>
+						<li>Standalone Pages <h5>personal website, standalone organization</h5></li>
+						<li class="fragment highlight-red">Repo Pages <h5>project pages</h5></li>
+
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>Let's make a quick page.</h2>
+					Branch.
+					<pre><code data-trim> ~> git branch gh-pages
+					</code></pre>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: 'beige', // available themes are in /css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
